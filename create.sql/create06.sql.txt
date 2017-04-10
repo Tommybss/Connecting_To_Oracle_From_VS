@@ -1,0 +1,9 @@
+create table mechanic
+( mechid char(3) not null,
+lname varchar(10),
+fname varchar(10),
+midint char(1),
+phone char(10),
+hiredate date,
+position varchar(10),
+primary key (mechid))

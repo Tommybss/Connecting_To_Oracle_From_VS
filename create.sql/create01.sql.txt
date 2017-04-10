@@ -1,0 +1,13 @@
+create table customer
+( custid char(3) not null,
+lname varchar(10),
+fname varchar(10),
+midint char(1),
+straddr varchar(15),
+city varchar(15),
+state char(2),
+zip char(5),
+hphone char(10),
+wphone char(10),
+custtype char(2),
+primary key (custid))

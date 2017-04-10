@@ -1,0 +1,6 @@
+create table service
+( serviceid char(3) not null,
+description varchar(30),
+charge number(6,2),
+timereqd number(4),
+primary key (serviceid))

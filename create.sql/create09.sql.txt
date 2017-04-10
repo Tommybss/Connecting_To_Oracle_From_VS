@@ -1,0 +1,11 @@
+create table invoice
+( invoiceid char(5) not null,
+invdate date,
+custid char(3),
+woid char(5),
+total number(6,2),
+paydate date,
+paymode varchar(5),
+primary key (invoiceid),
+foreign key (custid) references customer,
+foreign key (woid) references workorder)

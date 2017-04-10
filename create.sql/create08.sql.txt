@@ -1,0 +1,7 @@
+create table vehpart
+( woid char(5),
+partid char(3),
+qtyused number(3,0),
+primary key (woid, partid),
+foreign key (woid) references workorder,
+foreign key (partid) references part)

@@ -1,0 +1,10 @@
+create table workorder
+( woid char(5) not null,
+wodatetime date,
+vehicleid char(3),
+mileage number(8,2),
+expcomdatetime date,
+actcompdatetime date,
+costestimate number(5,2),
+primary key (woid),
+foreign key (vehicleid) references vehicle)
