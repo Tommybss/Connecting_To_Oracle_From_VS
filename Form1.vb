@@ -8,9 +8,9 @@ Public Class Form1
     Private Sub cmdBrowse_Click(sender As Object, e As EventArgs) Handles cmdBrowse.Click
         'Set up conncection
         Dim oradatabase As String = "Data Source = (DESCRIPTION=(ADDRESS_LIST=" _
-            + "(ADDRESS=(PROTOCOL=TCP)(HOST=luboradb.business.uwm.edu)(PORT=1521)))" _
-            + "(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=orcl.business.uwm.edu)));" _
-            + "User Id=becktj;Password=qrwxt;"
+        + "(ADDRESS=(PROTOCOL=TCP)(HOST=YOURHOST)(PORT=YOURPORT)))" _
+        + "(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=YOUR DB NAME)));" _
+        + "User Id=USERID;Password=USERPASS;"
         'Connect to database
         Dim conn As New OracleConnection(oradatabase)
         conn.Open()
@@ -31,9 +31,9 @@ Public Class Form1
     Private Sub cmdFind_Click(sender As Object, e As EventArgs) Handles cmdFind.Click
         'Set up conncection
         Dim oradatabase As String = "Data Source = (DESCRIPTION=(ADDRESS_LIST=" _
-            + "(ADDRESS=(PROTOCOL=TCP)(HOST=luboradb.business.uwm.edu)(PORT=1521)))" _
-            + "(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=orcl.business.uwm.edu)));" _
-            + "User Id=becktj;Password=qrwxt;"
+            + "(ADDRESS=(PROTOCOL=TCP)(HOST=YOURHOST)(PORT=YOURPORT)))" _
+            + "(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=YOUR DB NAME)));" _
+            + "User Id=USERID;Password=USERPASS;"
         'Connect to database
         Dim conn As New OracleConnection(oradatabase)
         conn.Open()
