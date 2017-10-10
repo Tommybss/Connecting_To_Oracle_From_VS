@@ -1,0 +1,11 @@
+create table part
+
+( partid char(3) not null,
+
+description varchar(30),
+
+charge number(6,2),
+
+qtyonhand number(6,0),
+
+primary key (partid))
