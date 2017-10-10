@@ -1,13 +1,0 @@
-create table vehicle
-( vehicleid char(3) not null,
-vin char(15),
-licno varchar(14),
-manufacturer varchar(15),
-make varchar(10),
-model varchar(10),
-year char(4),
-color char(2),
-custid char(3),
-purchasedate date,
-primary key (vehicleid),
-foreign key (custid) references customer)
