@@ -1,0 +1,18 @@
+create table vehservice
+
+( woid char(5),
+
+mechid char(3),
+
+serviceid char(3),
+
+servdatetimefrom date,
+
+servdatetimeto date,
+primary key(woid, mechid, serviceid),
+
+foreign key (woid) references workorder,
+
+foreign key (mechid) references mechanic,
+
+foreign key (serviceid) references service)
